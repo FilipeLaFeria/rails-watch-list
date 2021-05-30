@@ -1,1 +1,10 @@
+<%= form_for(@list) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
+<br>
 
+<%= link_to lists_path, class: 'btn btn-primary' do %>
+  <i class="fas fa-undo"></i> Return
+<% end %>
