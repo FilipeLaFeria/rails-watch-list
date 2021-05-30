@@ -34,6 +34,6 @@ class ListsController < ApplicationController
   end
 
   def list_params
-    params.require(:list).permit(:comment, :movie_id)
+    params.require(:list).permit(:name)
   end
 end
