@@ -1,4 +1,6 @@
 class ListsController < ApplicationController
+  before_action :set_list, only: [:show, :destroy]
+
   def index
     @lists = List.all
   end
@@ -8,7 +10,7 @@ class ListsController < ApplicationController
   end
 
   def show
-    @list = List.find(params[:id])
+    @list
   end
 
   def create
